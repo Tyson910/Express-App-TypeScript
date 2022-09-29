@@ -1,0 +1,16 @@
+{
+  "name": "form-handler",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyson910/form-handler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Tyson910/form-handler/issues"
+  },
+  "homepage": "https://github.com/Tyson910/form-handler#readme",
+}
