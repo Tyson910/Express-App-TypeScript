@@ -9,7 +9,7 @@
 		"prettier": "prettier --write \"{src/*,*}.{js,ts,jsx,tsx}\"",
     "build": "npm run lint && npm run prettier && tsc",
 		"build:cjs": "npm run lint && npm run prettier && tsc --module commonjs --outDir dist/cjs",
-    "start": "node dist/index.js",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
