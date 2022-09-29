@@ -5,6 +5,8 @@
   "scripts": {
 		"lint": "eslint --fix \"{src/*,*}.{js,ts,jsx,tsx}\"",
 		"prettier": "prettier --write \"{src/*,*}.{js,ts,jsx,tsx}\"",
+    "build": "npm run lint && npm run prettier && tsc",
+		"build:cjs": "npm run lint && npm run prettier && tsc --module commonjs --outDir dist/cjs",
   },
   "repository": {
     "type": "git",
