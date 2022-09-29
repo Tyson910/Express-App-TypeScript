@@ -2,11 +2,13 @@
   "name": "form-handler",
   "version": "1.0.0",
   "description": "",
+  "main": "./dist/index.js",
   "scripts": {
 		"lint": "eslint --fix \"{src/*,*}.{js,ts,jsx,tsx}\"",
 		"prettier": "prettier --write \"{src/*,*}.{js,ts,jsx,tsx}\"",
     "build": "npm run lint && npm run prettier && tsc",
 		"build:cjs": "npm run lint && npm run prettier && tsc --module commonjs --outDir dist/cjs",
+    "start": "node dist/index.js",
   },
   "repository": {
     "type": "git",
