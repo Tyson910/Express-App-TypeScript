@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "scripts": {
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/index.js\"",
-		"lint": "eslint --fix \"{src/*,*}.{js,ts,jsx,tsx}\"",
-		"prettier": "prettier --write \"{src/*,*}.{js,ts,jsx,tsx}\"",
+    "lint": "eslint --fix \"{src/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src/*,*}.{js,ts,jsx,tsx}\"",
     "build": "npm run lint && npm run prettier && tsc",
-		"build:cjs": "npm run lint && npm run prettier && tsc --module commonjs --outDir dist/cjs",
+    "build:cjs": "npm run lint && npm run prettier && tsc --module commonjs --outDir dist/cjs",
     "start": "node dist/index.js"
   },
   "repository": {
@@ -25,20 +25,24 @@
   "devDependencies": {
     "@types/express": "^4.17.14",
     "@types/node": "^18.7.23",
-    "concurrently": "^7.4.0",
-    "nodemon": "^2.0.20",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
-		"@typescript-eslint/parser": "^5.38.1",
-		"eslint": "^8.24.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-react": "^7.31.8",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"prettier": "^2.7.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
   "dependencies": {
     "dotenv": "^16.0.2",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
